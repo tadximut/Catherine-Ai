@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catherine-Ai</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- HEADER -->
+    <header class="topbar">
+      <img src="https://files.catbox.moe/9aj0fi.jpg" alt="Catherine" class="avatar" />
+      <div>
+        <h1>Catherine-Ai</h1>
+        <p class="status">AI Assistant — Bisa Coding, Gambar, Chat</p>
+      </div>
+    </header>
+
+    <!-- CHAT AREA -->
+    <main class="chat-container" id="chat-container">
+      <div class="bubble bot">Hai! Aku Catherine. Bisa bantu kamu buat gambar, kode, atau ngobrol bebas 💙</div>
+    </main>
+
+    <!-- INPUT -->
+    <form id="chat-form" class="input-area">
+      <input type="text" id="user-input" placeholder="Tulis pesan atau perintah..." autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+
+    <!-- TOOLS -->
+    <div class="tools">
+      <label for="file-upload" class="upload-btn">📎 Upload Foto
+        <input type="file" id="file-upload" hidden />
+      </label>
+      <button onclick="generateImage()">🖼️ Buat Gambar</button>
+      <button onclick="clearChat()">🧹 Bersihkan</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+        </html>
